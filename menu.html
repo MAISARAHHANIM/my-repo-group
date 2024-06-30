@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 8px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+div.scrollmenu {
+  background-color: #217ef7;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+* {box-sizing:border-box}
+
+* {
+  box-sizing: border-box;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* slide show */
+
+div.scrollmenu1 {
+  background-color: #df19db;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu1 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu1 a:hover {
+  background-color: #777;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+
+<body>
+  <!-- for top menu-->
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="location.html">Location</a>
+        <a href="contact.html">Contact Us</a>
+      
+      </div>
+
+
+
+<div>
+    <div style="text-align: center;">
+        <img src="D:\Microsoft VS Code\My Coding\Project Ayam\kyochon logo korea.png" style="width:10%">
+        
+        <div class="centered"></div>
+</div> 
+        
+
+       <br>  
+
+<br>
+<div align="center">
+  <h1>Menu</h1>
+ <h2>EXPLORE OUR SIGNATURE MENU</h2>       
+</div>
+
+<div class="row">
+
+
+</div>
+
+<!-- signature menu-->
+<div align="center">   
+    <img src="menu1.jpg">
+
+    <img src="menu2.jpg">
+
+    <img src="menu3.jpg">
+
+    <img src="menu4.jpg">
+
+    <img src="menu5.jpg">
+
+    <img src="menu6.jpg">
+
+    <img src="menu7.jpg">
+
+    <img src="menu8.jpg">
+
+    <img src="menu9.jpg">
+
+    <img src="menu10.jpg">
+</div> 
+<br>
+<img src="bannerfooter.png" style="width:100%"> 
+  
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  
+  
+  </script>
+        
+</body>

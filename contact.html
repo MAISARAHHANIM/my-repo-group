@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 8px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+div.scrollmenu {
+  background-color: #217ef7;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+* {box-sizing:border-box}
+
+* {
+  box-sizing: border-box;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+ 
+  
+  
+}
+
+</style>
+
+<body>
+    <!-- for top menu-->
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="location.html">Location</a>
+        <a href="contact.html">Contact Us</a>
+      
+      </div>
+
+
+
+<div class="container">
+    <div style="text-align: center;">
+        <img src="kyochon logo korea.png" style="width:10%">
+        <img src="banner ayam goreng.png" style="width:100%">
+        <div class="centered"><h1>Contact Us</h1></div>
+
+        <p color="black"></p><h2>GET IN TOUCH</h2></p>
+        <p>Have a suggestion or enquiry? We would love to hear from you!</p>
+         <p>   Write to us and we will get back to you within 1 working day.</p>
+
+         
+    <div class="row">
+        
+        <h3>Contact Form</h3>
+
+        
+         <!-- Contact Form-->
+        <div class="container1" >
+            <form action:"/action_page.php">
+                <label for="name">Name</label>
+                <input type="text" id="Name" name="name" placeholder="Your name..">
+
+                <label for="emailaddress">Email Address</label>
+                <input type="text" id="Email" name="email" placeholder="Your email address..">
+
+                <label for="contactnumber">Contact Number</label>
+                <input type="text" id="contactnumber" name="contactnumber" placeholder="Your contact number..">
+                
+                <label for="outletvisit">Outlet Visit</label>
+                <select id="outletvisit" name="outletvisit">
+                    <option value="klumpur">Kuala Lumpur</option>
+                        <option value="pavilionklumpur">Pavilion Kuala Lumpur</option>
+                        <option value="pandanindah">Pandan Indah</option>
+                        <option value="bandarbarusripetaling">Bandar Baru Sri Petaling</option>
+                    <option value="pjaya">Putrajaya</option>
+                        <option value="ioicitymall">IOI City Mall</option>
+                    <option value="slangor">Selangor</option>
+                        <option value="bangiseksyen9">Bangi Seksyen 9</option>
+                        <option value="1utamashoppingcentre">1 Utama Shopping Centre</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Your enquiry or message here..."
+                    style="height: 170px;"></textarea> 
+
+                <input type="submit" value="Submit">
+                <br>
+            </form>
+        </div>
+        <!-- Social Media-->
+        <h2>Our Social Media</h2>
+
+        <div>
+            
+            <a href="https://www.facebook.com/mykyochon/">
+            <img src="facebook logo.png" style="width:5%">
+            </a>
+            <p>Kyochon Malaysia</p>
+
+            <a href="https://www.instagram.com/mykyochon/">
+            <img src="instagram logo.png" style="width:5%">
+            </a>
+            <p>mykyochon</p>
+            
+            <a href="https://x.com/kyochonmalaysia?lang=en">
+             <img src="X logo.png" style="width:5%">
+            </a>
+            <p>KyoChon 1991 Malaysia</p>
+
+        </div>
+        <br>
+        <!-- Company Contact Details-->
+        <div>
+            <h2>Kyochon Sdn Bhd </h2>
+            <p>Address: Kyochon Sdn. Bhd
+                9, Jalan TPP 1/4, Taman Perindustrian Puchong,
+                47100 Puchong, Selangor </p>
+            <p>Email:</p> <a href="mailto: info@kyochon.com.my"> info@kyochon.com.my </a>
+        </div>
+<br>
+    </div>
+</div>
+<img src="bannerfooter.png" style="width:100%">        
+</body>
